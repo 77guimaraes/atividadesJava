@@ -1,7 +1,6 @@
 import java.util.Locale; //muda o idioma no terminal
 
-public class exercicio1 {
-        public static void main(String[] args) {
+void main() {
 
                 String product1 = "Computer";
                 String product2 = "Office desk";
@@ -26,4 +25,3 @@ public class exercicio1 {
                 System.out.printf("%.3f%n", measure);
 
         }
-}
