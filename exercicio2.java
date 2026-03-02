@@ -40,11 +40,12 @@ void main (){
         // A seguir, calcule e mostre a diferença do produto de A e B pelo produto
         // de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
 
-        int a = 5;
-        int b = 6;
-        int c = 7;
-        int d = 8;
-        int e = -7;
+        int a, b, c, d, e;
+                a = 5;
+                b = 6;
+                c = 7;
+                d = 8;
+                e = -7;
         int diferenca = a * b - c * d;
         int diferenca2 = a * b - e * d;
 
