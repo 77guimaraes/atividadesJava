@@ -34,22 +34,42 @@ void main (){
 //        double area = valorDePi * (raio * raio);
 //
 //        System.out.printf("O valor da área é = %.4f%n", area);
-//        System.out.println("Insira um valor válido");
 
         //ATIVIDADE 3 - Fazer um programa para ler quatro valores inteiros A, B, C e D.
         // A seguir, calcule e mostre a diferença do produto de A e B pelo produto
         // de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
 
-        int a, b, c, d, e;
-                a = 5;
-                b = 6;
-                c = 7;
-                d = 8;
-                e = -7;
-        int diferenca = a * b - c * d;
-        int diferenca2 = a * b - e * d;
+//      int a, b, c, d, e;
+//              a = 5;
+//              b = 6;
+//              c = 7;
+//              d = 8;
+//              e = -7;
+//      int diferenca = a * b - c * d;
+//      int diferenca2 = a * b - e * d;
+//
+//      System.out.println("DIFERENÇA = " + diferenca);
+//      System.out.println("DIFERENÇA = " + diferenca2);
 
-        System.out.println("DIFERENÇA = " + diferenca);
-        System.out.println("DIFERENÇA = " + diferenca2);
+        /*ATIVIDADE 4:
+        Fazer um programa que leia o número de um funcionário, seu número de horas
+        trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário.
+        A seguir, mostre o número e o salário do funcionário, com duas casas decimais. */
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite seu ID: ");
+        int id = sc.nextInt();
+
+        Scanner sc1 = new Scanner(System.in);
+        System.out.print("Digite suas horas trabalhadas: ");
+        double horas = sc1.nextDouble();
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.print("Informe o valor recebido por hora trabalhada: ");
+        double valor = sc2.nextDouble();
+
+        double salario = horas * valor;
+
+        System.out.println("=== Olá colaborador! Seu ID é: " + id);
+        System.out.printf("De acordo com as informações repassadas, %nseu salário é: %.2f", salario);
 }
